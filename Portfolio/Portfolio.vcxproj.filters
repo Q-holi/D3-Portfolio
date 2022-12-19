@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{6fc81eb1-1e04-4a08-bf43-555a027de36b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameManager">
+      <UniqueIdentifier>{d99fff60-4650-4d3d-b71a-bead9dd37b86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player">
+      <UniqueIdentifier>{55f10e5b-7587-4a3e-b7bc-e8c6bc40f8f2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Main.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="GameScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="SuperliminalObject.h">
+      <Filter>GameManager</Filter>
+    </ClInclude>
+    <ClInclude Include="SuperliminalSimulator.h">
+      <Filter>GameManager</Filter>
+    </ClInclude>
+    <ClInclude Include="SuperliminalCollisionDetector.h">
+      <Filter>GameManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Contact.h">
+      <Filter>GameManager</Filter>
+    </ClInclude>
+    <ClInclude Include="PlaneCollider.h">
+      <Filter>GameManager</Filter>
+    </ClInclude>
+    <ClInclude Include="SuperliminalCollisionResolver.h">
+      <Filter>GameManager</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGuiEditer.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="GameScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="SuperliminalObject.cpp">
+      <Filter>GameManager</Filter>
+    </ClCompile>
+    <ClCompile Include="SuperliminalSimulator.cpp">
+      <Filter>GameManager</Filter>
+    </ClCompile>
+    <ClCompile Include="SuperliminalCollisionDetector.cpp">
+      <Filter>GameManager</Filter>
+    </ClCompile>
+    <ClCompile Include="PlaneCollider.cpp">
+      <Filter>GameManager</Filter>
+    </ClCompile>
+    <ClCompile Include="SuperliminalCollisionResolver.cpp">
+      <Filter>GameManager</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGuiEditer.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

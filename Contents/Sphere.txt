@@ -1,0 +1,71 @@
+
+    vector<VertexPC> v;
+    v.push_back(VertexPC(Vector3(0, 1, 0), Color(0.5f, 0.5f, 0.5f)));
+
+    int stackCount = 36;
+    int sliceCount = 72;
+    float phiStep = XM_PI / stackCount;
+    float thetaStep = 2.0f * XM_PI / sliceCount;
+
+    for (UINT i = 1; i <= stackCount - 1; i++)
+    {
+        float phi = i * phiStep;
+
+        for (UINT j = 0; j <= sliceCount; j++)
+        {
+            float theta = j * thetaStep;
+
+            Vector3 p = Vector3
+            (
+                (sinf(phi) * cosf(theta)),
+                (cosf(phi)),
+                (sinf(phi) * sinf(theta))
+            );
+            v.push_back(VertexPC(p, Color(j / (float)sliceCount, 0.5f, i / (float)stackCount)));
+        }
+
+    }
+    v.push_back(VertexPC(Vector3(0, -1, 0), Color(0.5f, 0.5f, 0.5f)));
+
+    Vertex = new VertexPC[v.size()];
+    vertexCount = v.size();
+    copy(v.begin(), v.end(), stdext::checked_array_iterator<VertexPC*>(Vertex, vertexCount));
+
+    vector<UINT> vecindices;
+
+    for (UINT i = 1; i <= sliceCount; i++)
+    {
+        vecindices.push_back(0);
+        vecindices.push_back(i + 1);
+        vecindices.push_back(i);
+    }
+
+    UINT baseIndex = 1;
+    UINT ringVertexCount = sliceCount + 1;
+    for (UINT i = 0; i < stackCount - 2; i++)
+    {
+        for (UINT j = 0; j < sliceCount; j++)
+        {
+            vecindices.push_back(baseIndex + i * ringVertexCount + j);
+            vecindices.push_back(baseIndex + i * ringVertexCount + j + 1);
+            vecindices.push_back(baseIndex + (i + 1) * ringVertexCount + j);
+
+            vecindices.push_back(baseIndex + (i + 1) * ringVertexCount + j);
+            vecindices.push_back(baseIndex + i * ringVertexCount + j + 1);
+            vecindices.push_back(baseIndex + (i + 1) * ringVertexCount + j + 1);
+        }
+    }
+
+    UINT southPoleIndex = v.size() - 1;
+    baseIndex = southPoleIndex - ringVertexCount;
+
+    for (UINT i = 0; i < sliceCount; i++)
+    {
+        vecindices.push_back(southPoleIndex);
+        vecindices.push_back(baseIndex + i);
+        vecindices.push_back(baseIndex + i + 1);
+    }
+
+    this->indices = new UINT[vecindices.size()];
+    indexCount = vecindices.size();
+    copy(vecindices.begin(), vecindices.end(), stdext::checked_array_iterator<UINT*>(this->indices, indexCount));

@@ -1,0 +1,11 @@
+<Root Name="Wall_1" Visible="true" ObType="1">
+    <Mesh File="6.UI.mesh"/>
+    <Shader File="6.PortfolioWall.hlsl"/>
+    <Material File="PortfolioWall.mtl"/>
+    <Transform>
+        <Position X="0" Y="128" Z="127"/>
+        <Scale X="256" Y="256" Z="1"/>
+        <Rotation X="0" Y="0" Z="0"/>
+    </Transform>
+    <Children Size="0"/>
+</Root>

@@ -1,0 +1,10 @@
+<Root Name="Camera" Visible="true" ObType="2">
+    <Material File="Win.mtl"/>
+    <Transform>
+        <Position X="-200" Y="200" Z="0"/>
+        <Scale X="1" Y="1" Z="1"/>
+        <Rotation X="-3.5430186" Y="-0.5410521" Z="-0.2617994"/>
+    </Transform>
+    <Camera Ortho="true" Fov="1.6929694" Width="1102" Height="719" NearZ="0.1" FarZ="500" viewportX="0" viewportY="0" viewportW="1102" viewportH="719"/>
+    <Children Size="0"/>
+</Root>

@@ -1,0 +1,63 @@
+<Root Name="RootNode" Visible="true" ObType="1" BoneIndex="0">
+    <Skeleton File="door/door.skel" BoneIndexCount="6"/>
+    <Shader File="4.cube.hlsl"/>
+    <Transform>
+        <Position X="0" Y="0" Z="0"/>
+        <Scale X="0.1" Y="0.1" Z="0.1"/>
+        <Rotation X="0" Y="0" Z="0"/>
+    </Transform>
+    <Children Size="1"/>
+    <Child0 Name="Offset" Visible="true" ObType="0" BoneIndex="1">
+        <Shader File="4.cube.hlsl"/>
+        <Transform>
+            <Position X="0" Y="0" Z="0"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="-0"/>
+        </Transform>
+        <Children Size="3"/>
+        <Child0 Name="Cube" Visible="false" ObType="0" BoneIndex="4">
+            <Mesh File="door/Cube.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="door/Material.mtl"/>
+            <Transform>
+                <Position X="-54.131081" Y="258.91687" Z="-1.8951906"/>
+                <Scale X="8.000001" Y="548" Z="251"/>
+                <Rotation X="1.5707963" Y="0" Z="0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child0>
+        <Child1 Name="Cube.001" Visible="true" ObType="0" BoneIndex="3">
+            <Mesh File="door/Cube.001.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="door/Material.003.mtl"/>
+            <Transform>
+                <Position X="-40.274845" Y="233.51836" Z="-3.5839021"/>
+                <Scale X="5.000001" Y="100" Z="361"/>
+                <Rotation X="1.5707963" Y="0" Z="0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child1>
+        <Child2 Name="Vert.004" Visible="true" ObType="0" BoneIndex="2">
+            <Mesh File="door/Vert.004.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="door/DoorHandler.mtl"/>
+            <Transform>
+                <Position X="-40.272175" Y="178.92836" Z="-92.435448"/>
+                <Scale X="9" Y="9" Z="9"/>
+                <Rotation X="-1.5707963" Y="1.570796" Z="0"/>
+            </Transform>
+            <Children Size="1"/>
+            <Child0 Name="CUVert.004MeshObject" Visible="true" ObType="0" BoneIndex="5">
+                <Mesh File="door/CUVert.004MeshObject.mesh"/>
+                <Shader File="4.Cube.hlsl"/>
+                <Material File="door/Material.001.mtl"/>
+                <Transform>
+                    <Position X="0" Y="0" Z="0"/>
+                    <Scale X="1" Y="1" Z="1"/>
+                    <Rotation X="0" Y="0" Z="0"/>
+                </Transform>
+                <Children Size="0"/>
+            </Child0>
+        </Child2>
+    </Child0>
+</Root>

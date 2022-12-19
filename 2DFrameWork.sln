@@ -1,0 +1,222 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32002.261
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2DFrameWork", "2DFrameWork\2DFrameWork.vcxproj", "{C2138BC9-A195-455F-91A6-5FF469EB5E61}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Txt", "Txt", "{5C50A1A2-DAEB-4AA7-A93E-D9F138E0BC73}"
+	ProjectSection(SolutionItems) = preProject
+		Txt\그래픽스.txt = Txt\그래픽스.txt
+		Txt\벡터.txt = Txt\벡터.txt
+		Txt\행렬.txt = Txt\행렬.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mesh", "Mesh", "{5606A415-270E-456A-8B3F-528394EC1DE7}"
+	ProjectSection(SolutionItems) = preProject
+		Contents\Mesh\0.Rect.mesh = Contents\Mesh\0.Rect.mesh
+		Contents\Mesh\0.Rect2.mesh = Contents\Mesh\0.Rect2.mesh
+		Contents\Mesh\1.BoxCollider.mesh = Contents\Mesh\1.BoxCollider.mesh
+		Contents\Mesh\1.Circle.mesh = Contents\Mesh\1.Circle.mesh
+		Contents\Mesh\1.Cube.mesh = Contents\Mesh\1.Cube.mesh
+		Contents\Mesh\1.Cube1.mesh = Contents\Mesh\1.Cube1.mesh
+		Contents\Mesh\1.Cube2.mesh = Contents\Mesh\1.Cube2.mesh
+		Contents\Mesh\1.Cube3.mesh = Contents\Mesh\1.Cube3.mesh
+		Contents\Mesh\1.Grid.mesh = Contents\Mesh\1.Grid.mesh
+		Contents\Mesh\1.Line.mesh = Contents\Mesh\1.Line.mesh
+		Contents\Mesh\1.Point.mesh = Contents\Mesh\1.Point.mesh
+		Contents\Mesh\1.Sphere.mesh = Contents\Mesh\1.Sphere.mesh
+		Contents\Mesh\1.Sphere2.mesh = Contents\Mesh\1.Sphere2.mesh
+		Contents\Mesh\1.SphereCollider.mesh = Contents\Mesh\1.SphereCollider.mesh
+		Contents\Mesh\1.Transform.mesh = Contents\Mesh\1.Transform.mesh
+		Contents\Mesh\2.box.mesh = Contents\Mesh\2.box.mesh
+		Contents\Mesh\2.Cube.mesh = Contents\Mesh\2.Cube.mesh
+		Contents\Mesh\2.Map.mesh = Contents\Mesh\2.Map.mesh
+		Contents\Mesh\2.Sphere.mesh = Contents\Mesh\2.Sphere.mesh
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GameObject", "GameObject", "{0E99CD31-1395-431F-8187-ECD925CDC4F6}"
+	ProjectSection(SolutionItems) = preProject
+		Contents\GameObject\Cam.xml = Contents\GameObject\Cam.xml
+		Contents\GameObject\Cam3.xml = Contents\GameObject\Cam3.xml
+		Contents\GameObject\Character.xml = Contents\GameObject\Character.xml
+		Contents\GameObject\Character2.xml = Contents\GameObject\Character2.xml
+		Contents\GameObject\Grid.xml = Contents\GameObject\Grid.xml
+		Contents\GameObject\Map.xml = Contents\GameObject\Map.xml
+		Contents\GameObject\MapSurface.xml = Contents\GameObject\MapSurface.xml
+		Contents\GameObject\Model.xml = Contents\GameObject\Model.xml
+		Contents\GameObject\Rain.xml = Contents\GameObject\Rain.xml
+		Contents\GameObject\Sphere2.xml = Contents\GameObject\Sphere2.xml
+		Contents\GameObject\Sun.xml = Contents\GameObject\Sun.xml
+		Contents\GameObject\Terrain.xml = Contents\GameObject\Terrain.xml
+		Contents\GameObject\Window.xml = Contents\GameObject\Window.xml
+		Contents\GameObject\Window2.xml = Contents\GameObject\Window2.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shaders", "Shaders", "{6498BC6D-79F3-44EF-806D-3CB449E9F69E}"
+	ProjectSection(SolutionItems) = preProject
+		Shaders\0.CubeMap.hlsl = Shaders\0.CubeMap.hlsl
+		Shaders\0.Exam.hlsl = Shaders\0.Exam.hlsl
+		Shaders\1.Collider.hlsl = Shaders\1.Collider.hlsl
+		Shaders\1.Cube.hlsl = Shaders\1.Cube.hlsl
+		Shaders\1.CubeMap.hlsl = Shaders\1.CubeMap.hlsl
+		Shaders\1.ShadowMap.hlsl = Shaders\1.ShadowMap.hlsl
+		Shaders\2.Cube.hlsl = Shaders\2.Cube.hlsl
+		Shaders\2.CubeMap.hlsl = Shaders\2.CubeMap.hlsl
+		Shaders\2.ShadowMap.hlsl = Shaders\2.ShadowMap.hlsl
+		Shaders\3.Cube.hlsl = Shaders\3.Cube.hlsl
+		Shaders\3.CubeMap.hlsl = Shaders\3.CubeMap.hlsl
+		Shaders\3.ShadowMap.hlsl = Shaders\3.ShadowMap.hlsl
+		Shaders\4.Cube.hlsl = Shaders\4.Cube.hlsl
+		Shaders\4.CubeMap.hlsl = Shaders\4.CubeMap.hlsl
+		Shaders\4.ShadowMap.hlsl = Shaders\4.ShadowMap.hlsl
+		Shaders\5.Cube.hlsl = Shaders\5.Cube.hlsl
+		Shaders\5.CubeMap.hlsl = Shaders\5.CubeMap.hlsl
+		Shaders\5.ShadowMap.hlsl = Shaders\5.ShadowMap.hlsl
+		Shaders\5.TerrainEditor.hlsl = Shaders\5.TerrainEditor.hlsl
+		Shaders\6.Cube.hlsl = Shaders\6.Cube.hlsl
+		Shaders\6.PortfolioWall.hlsl = Shaders\6.PortfolioWall.hlsl
+		Shaders\6.PostEffect.hlsl = Shaders\6.PostEffect.hlsl
+		Shaders\7.Cube.hlsl = Shaders\7.Cube.hlsl
+		Shaders\7.Rain.hlsl = Shaders\7.Rain.hlsl
+		Shaders\8.Pop.hlsl = Shaders\8.Pop.hlsl
+		Shaders\9.Cube.hlsl = Shaders\9.Cube.hlsl
+		Shaders\Common.hlsl = Shaders\Common.hlsl
+		Shaders\ComputeShader.hlsl = Shaders\ComputeShader.hlsl
+		Contents\GameObject\Window.xml = Contents\GameObject\Window.xml
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AssimpConverter", "AssimpConverter\AssimpConverter.vcxproj", "{D6FD016D-C3C0-47F4-8BDB-90B92EFABBEF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C2138BC9-A195-455F-91A6-5FF469EB5E61} = {C2138BC9-A195-455F-91A6-5FF469EB5E61}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TerrainEditor", "TerrainEditor\TerrainEditor.vcxproj", "{24E46C3D-7264-43BF-8D42-43E35B2DB17A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C2138BC9-A195-455F-91A6-5FF469EB5E61} = {C2138BC9-A195-455F-91A6-5FF469EB5E61}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Texture", "Texture", "{EF86CA58-00FB-452E-B1F6-3660A2C02861}"
+	ProjectSection(SolutionItems) = preProject
+		Contents\Texture\2000000.png = Contents\Texture\2000000.png
+		Contents\Texture\2000001.png = Contents\Texture\2000001.png
+		Contents\Texture\2000002.png = Contents\Texture\2000002.png
+		Contents\Texture\2000003.png = Contents\Texture\2000003.png
+		Contents\Texture\AIRFIELD256X256.jpg = Contents\Texture\AIRFIELD256X256.jpg
+		Contents\Texture\AVE256.jpg = Contents\Texture\AVE256.jpg
+		Contents\Texture\grass.jpg = Contents\Texture\grass.jpg
+		Contents\Texture\max.png = Contents\Texture\max.png
+		Contents\Texture\min.png = Contents\Texture\min.png
+		Contents\Texture\pop.png = Contents\Texture\pop.png
+		Contents\Texture\seafloor.dds = Contents\Texture\seafloor.dds
+		Contents\Texture\sky.dds = Contents\Texture\sky.dds
+		Contents\Texture\terrain.jpg = Contents\Texture\terrain.jpg
+		Contents\Texture\water.png = Contents\Texture\water.png
+		Contents\Texture\window.png = Contents\Texture\window.png
+		Contents\Texture\x.png = Contents\Texture\x.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "box", "box", "{9B735063-3B8A-4D0D-91D1-3988CB645409}"
+	ProjectSection(SolutionItems) = preProject
+		Contents\Texture\box\box.jpg = Contents\Texture\box\box.jpg
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Map", "Map", "{7657184A-5999-4C1B-881F-10406160BB53}"
+	ProjectSection(SolutionItems) = preProject
+		Contents\Texture\Map\NMP_Ripples2_512.dds = Contents\Texture\Map\NMP_Ripples2_512.dds
+		Contents\Texture\Map\seafloor.dds = Contents\Texture\Map\seafloor.dds
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "map_surface", "map_surface", "{999BD7A4-1DA0-4C77-9A45-FBDFD1B93A0C}"
+	ProjectSection(SolutionItems) = preProject
+		Contents\Texture\map_surface\seafloor.dds = Contents\Texture\map_surface\seafloor.dds
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Vampire A Lusth", "Vampire A Lusth", "{9EEE311C-6DF8-4970-A910-A0BD3F63E1C4}"
+	ProjectSection(SolutionItems) = preProject
+		Contents\Texture\Vampire A Lusth\Vampire_diffuse.png = Contents\Texture\Vampire A Lusth\Vampire_diffuse.png
+		Contents\Texture\Vampire A Lusth\Vampire_diffuse_transparent.png = Contents\Texture\Vampire A Lusth\Vampire_diffuse_transparent.png
+		Contents\Texture\Vampire A Lusth\Vampire_emission.png = Contents\Texture\Vampire A Lusth\Vampire_emission.png
+		Contents\Texture\Vampire A Lusth\Vampire_normal.png = Contents\Texture\Vampire A Lusth\Vampire_normal.png
+		Contents\Texture\Vampire A Lusth\Vampire_specular.png = Contents\Texture\Vampire A Lusth\Vampire_specular.png
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Portfolio", "Portfolio\Portfolio.vcxproj", "{6829BB33-409D-4D0E-AAC9-EF5AE415AE29}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C2138BC9-A195-455F-91A6-5FF469EB5E61} = {C2138BC9-A195-455F-91A6-5FF469EB5E61}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PortfolioGO", "PortfolioGO", "{DD92A219-07E4-4791-A9A3-1EF83441043D}"
+	ProjectSection(SolutionItems) = preProject
+		Contents\GameObject\PortfolioGO\AimTarget.xml = Contents\GameObject\PortfolioGO\AimTarget.xml
+		Contents\GameObject\PortfolioGO\PortfolioMap.xml = Contents\GameObject\PortfolioGO\PortfolioMap.xml
+		Contents\GameObject\PortfolioGO\testCube.xml = Contents\GameObject\PortfolioGO\testCube.xml
+		Contents\GameObject\PortfolioGO\testSphere.xml = Contents\GameObject\PortfolioGO\testSphere.xml
+		Contents\GameObject\PortfolioGO\Wall_1.xml = Contents\GameObject\PortfolioGO\Wall_1.xml
+		Contents\GameObject\PortfolioGO\Wall_2.xml = Contents\GameObject\PortfolioGO\Wall_2.xml
+		Contents\GameObject\PortfolioGO\Wall_3.xml = Contents\GameObject\PortfolioGO\Wall_3.xml
+		Contents\GameObject\PortfolioGO\Wall_4.xml = Contents\GameObject\PortfolioGO\Wall_4.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SampleMesh", "SampleMesh", "{24F05C05-41CB-46EA-85F3-4D54F7D0BFCF}"
+	ProjectSection(SolutionItems) = preProject
+		Contents\Mesh\SampleMesh\1.SampleCube.mesh = Contents\Mesh\SampleMesh\1.SampleCube.mesh
+		Contents\Mesh\SampleMesh\1.SampleSphere.mesh = Contents\Mesh\SampleMesh\1.SampleSphere.mesh
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2138BC9-A195-455F-91A6-5FF469EB5E61}.Debug|x64.ActiveCfg = Debug|x64
+		{C2138BC9-A195-455F-91A6-5FF469EB5E61}.Debug|x64.Build.0 = Debug|x64
+		{C2138BC9-A195-455F-91A6-5FF469EB5E61}.Debug|x86.ActiveCfg = Debug|Win32
+		{C2138BC9-A195-455F-91A6-5FF469EB5E61}.Debug|x86.Build.0 = Debug|Win32
+		{C2138BC9-A195-455F-91A6-5FF469EB5E61}.Release|x64.ActiveCfg = Release|x64
+		{C2138BC9-A195-455F-91A6-5FF469EB5E61}.Release|x64.Build.0 = Release|x64
+		{C2138BC9-A195-455F-91A6-5FF469EB5E61}.Release|x86.ActiveCfg = Release|Win32
+		{C2138BC9-A195-455F-91A6-5FF469EB5E61}.Release|x86.Build.0 = Release|Win32
+		{D6FD016D-C3C0-47F4-8BDB-90B92EFABBEF}.Debug|x64.ActiveCfg = Debug|x64
+		{D6FD016D-C3C0-47F4-8BDB-90B92EFABBEF}.Debug|x64.Build.0 = Debug|x64
+		{D6FD016D-C3C0-47F4-8BDB-90B92EFABBEF}.Debug|x86.ActiveCfg = Debug|Win32
+		{D6FD016D-C3C0-47F4-8BDB-90B92EFABBEF}.Debug|x86.Build.0 = Debug|Win32
+		{D6FD016D-C3C0-47F4-8BDB-90B92EFABBEF}.Release|x64.ActiveCfg = Release|x64
+		{D6FD016D-C3C0-47F4-8BDB-90B92EFABBEF}.Release|x64.Build.0 = Release|x64
+		{D6FD016D-C3C0-47F4-8BDB-90B92EFABBEF}.Release|x86.ActiveCfg = Release|Win32
+		{D6FD016D-C3C0-47F4-8BDB-90B92EFABBEF}.Release|x86.Build.0 = Release|Win32
+		{24E46C3D-7264-43BF-8D42-43E35B2DB17A}.Debug|x64.ActiveCfg = Debug|x64
+		{24E46C3D-7264-43BF-8D42-43E35B2DB17A}.Debug|x64.Build.0 = Debug|x64
+		{24E46C3D-7264-43BF-8D42-43E35B2DB17A}.Debug|x86.ActiveCfg = Debug|Win32
+		{24E46C3D-7264-43BF-8D42-43E35B2DB17A}.Debug|x86.Build.0 = Debug|Win32
+		{24E46C3D-7264-43BF-8D42-43E35B2DB17A}.Release|x64.ActiveCfg = Release|x64
+		{24E46C3D-7264-43BF-8D42-43E35B2DB17A}.Release|x64.Build.0 = Release|x64
+		{24E46C3D-7264-43BF-8D42-43E35B2DB17A}.Release|x86.ActiveCfg = Release|Win32
+		{24E46C3D-7264-43BF-8D42-43E35B2DB17A}.Release|x86.Build.0 = Release|Win32
+		{6829BB33-409D-4D0E-AAC9-EF5AE415AE29}.Debug|x64.ActiveCfg = Debug|x64
+		{6829BB33-409D-4D0E-AAC9-EF5AE415AE29}.Debug|x64.Build.0 = Debug|x64
+		{6829BB33-409D-4D0E-AAC9-EF5AE415AE29}.Debug|x86.ActiveCfg = Debug|Win32
+		{6829BB33-409D-4D0E-AAC9-EF5AE415AE29}.Debug|x86.Build.0 = Debug|Win32
+		{6829BB33-409D-4D0E-AAC9-EF5AE415AE29}.Release|x64.ActiveCfg = Release|x64
+		{6829BB33-409D-4D0E-AAC9-EF5AE415AE29}.Release|x64.Build.0 = Release|x64
+		{6829BB33-409D-4D0E-AAC9-EF5AE415AE29}.Release|x86.ActiveCfg = Release|Win32
+		{6829BB33-409D-4D0E-AAC9-EF5AE415AE29}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9B735063-3B8A-4D0D-91D1-3988CB645409} = {EF86CA58-00FB-452E-B1F6-3660A2C02861}
+		{7657184A-5999-4C1B-881F-10406160BB53} = {EF86CA58-00FB-452E-B1F6-3660A2C02861}
+		{999BD7A4-1DA0-4C77-9A45-FBDFD1B93A0C} = {EF86CA58-00FB-452E-B1F6-3660A2C02861}
+		{9EEE311C-6DF8-4970-A910-A0BD3F63E1C4} = {EF86CA58-00FB-452E-B1F6-3660A2C02861}
+		{DD92A219-07E4-4791-A9A3-1EF83441043D} = {0E99CD31-1395-431F-8187-ECD925CDC4F6}
+		{24F05C05-41CB-46EA-85F3-4D54F7D0BFCF} = {5606A415-270E-456A-8B3F-528394EC1DE7}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9E65A645-0ED0-45FC-8214-114C1DE27774}
+	EndGlobalSection
+EndGlobal

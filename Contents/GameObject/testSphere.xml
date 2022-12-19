@@ -1,0 +1,11 @@
+<Root Name="Sphere" Visible="true" ObType="1">
+    <Mesh File="2.Sphere.mesh"/>
+    <Shader File="2.Cube.hlsl"/>
+    <Material File="testsphere.mtl"/>
+    <Transform>
+        <Position X="24.865301" Y="63.667278" Z="107.97385"/>
+        <Scale X="10.605794" Y="10.605794" Z="10.605794"/>
+        <Rotation X="0" Y="0" Z="0"/>
+    </Transform>
+    <Children Size="0"/>
+</Root>
