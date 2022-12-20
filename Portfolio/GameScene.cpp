@@ -189,11 +189,11 @@ void GameScene::Update()
 	{
 		sky->RenderHierarchy();
 		user->RenderHierarchy();
-		Map->RenderHierarchy();
-		Cam->RenderHierarchy();
-		for (int i = 0; i < 4; i++) {
-			wallArray[i]->RenderHierarchy();
-		}
+		//Map->RenderHierarchy();
+		//Cam->RenderHierarchy();
+		//for (int i = 0; i < 4; i++) {
+		//	wallArray[i]->RenderHierarchy();
+		//}
 		for (int i = 0; i < 2; i++) {
 			objectArray[i]->RenderHierarchy();
 		}
