@@ -187,8 +187,7 @@ void Animations::RenderDetail()
 	item_current = indexnumber;
 	
 	ImGui::Separator();
-
-
+	//-- 각 기능에 맞는 버튼을 생성한다.
 	if (ImGui::Button("STOP"))
 	{
 		PlayAnimation(AnimationState::STOP, indexnumber);
@@ -203,6 +202,13 @@ void Animations::RenderDetail()
 	{
 		PlayAnimation(AnimationState::LOOP, indexnumber);
 	}
+	//--Animation의 출력은 반환받은 Combo인덱스 번호를 사용하여 출력
+
+
+
+
+
+
 
 	/*for (UINT i = 0; i < playList.size(); i++)
 	{
@@ -233,12 +239,15 @@ void Animations::RenderDetail()
 
 int Animations::ImGuiComboUI(const std::string& caption, std::string& current_item,  std::vector<std::string>& items,int item_current)
 {
+	//--ImGui.h에서 수정이 가능하지만 Read속성으로 불러와  Animations에서 수정
+	//--!ImGui는 string으로 받을수 있는 타입이 없다.!
 	static int  number = 0;
-
+	//--current_item List클릭 후 보여질 Ainmation의 Name
 	if (ImGui::BeginCombo(caption.c_str(), current_item.c_str())) {
 		for (int n = 0; n < items.size(); n++) {
 			bool is_selected = (current_item == items[n]);
 			if (ImGui::Selectable(items[n].c_str(), is_selected)) {
+				//--List중 선택 후 static number에 번호를 담고 리턴해준다.
 				number = n;
 			}
 		}
