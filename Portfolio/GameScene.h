@@ -48,6 +48,8 @@ private:
 	//--SuperliminalSimulator Start
 	SuperliminalSimulator simulator;
 	bool ImGuiEditer;
+public:
+	bool openHierarchy;
 
 public:
 	GameScene();

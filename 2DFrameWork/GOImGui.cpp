@@ -24,16 +24,28 @@ void Transform::RenderDetail()
 	ImGui::SliderAngle("rotationY", &rotation.y);
 	ImGui::SliderAngle("rotationZ", &rotation.z);
 	ImGui::DragFloat3("Scale", (float*)&scale, 0.05f);
-	
+
 }
 
 bool GameObject::RenderHierarchy()
 {
+	//if (this->selectHierarchy == true) {
+	//	GImGui->LastItemData.StatusFlags = ImGuiItemStatusFlags_ToggledOpen;
+	//	GUI->target = this;
+	//}
+	//else {
+	//	GImGui->LastItemData.StatusFlags = ImGuiItemStatusFlags_None;
+	//}
+
 	ImGui::PushID(this);
+	if(selectHierarchy)
+		ImGui::SetNextItemOpen(true);
+
 	if (ImGui::TreeNode(name.c_str()))
 	{
+
 		if (ImGui::IsItemToggledOpen() or
-			ImGui::IsItemClicked())
+			ImGui::IsItemClicked() or selectHierarchy)
 		{
 			GUI->target = this;
 		}
@@ -340,6 +352,7 @@ void Actor::RenderDetail()
 //}
 	ImGui::Separator();
 	ImGui::Text("Actor [Save] or [Load]");
+
 	if (GUI->FileImGui("Save", "Save Actor",
 		".xml", "../Contents/GameObject"))
 	{
@@ -375,7 +388,7 @@ void Actor::RenderDetail()
 		}
 		LoadFile(path);
 	}
-	//ImGui::EndTabItem();
+
 }
 
 

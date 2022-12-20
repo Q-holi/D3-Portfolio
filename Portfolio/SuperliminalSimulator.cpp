@@ -12,6 +12,9 @@ void SuperliminalSimulator::addGameObject(unsigned int id, SuperliminalObject& g
 
     gameObject.inverseMass = 1.0f / 5.0f;
     gameObject.acceleration = Vector3(0.0f,-gravity, 0.0f);
+    //bodies.insert()
+
+        //--insert( {key, value} )
     bodies[id] = &gameObject;
     //cout << "bodies" << id << &bodies[id] << endl;
     //cout << "bodies" << id << bodies[id]->inverseMass << endl;
@@ -24,11 +27,12 @@ void SuperliminalSimulator::Simulate(float duration)
         body.second->integrate(duration);
     }
     /* 물체 간 충돌을 검출한다 */
-    detector.detectCollision(contacts, bodies, groundCollider);
+    //detector.detectCollision(contacts, bodies, groundCollider);
 
 
     //resolver.resolveCollision(contacts, DELTA);
-    //bodies[0]->MoveWorldPos(bodies[0]->GetVelocity()*DELTA * DELTA);
+    bodies[0]->MoveWorldPos(bodies[0]->GetAcceleration()*DELTA );
+    bodies[1]->MoveWorldPos(bodies[1]->GetAcceleration()*DELTA );
     //bodies[0]->MoveWorldPos(bodies[0]->GetAcceleration()* bodies[0]->GetVelocity() *DELTA);
 
     contacts.clear();

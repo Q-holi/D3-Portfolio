@@ -3,8 +3,8 @@
     <Shader File="2.Cube.hlsl"/>
     <Material File="testsphere.mtl"/>
     <Transform>
-        <Position X="24.865301" Y="63.667278" Z="107.97385"/>
-        <Scale X="10.605794" Y="10.605794" Z="10.605794"/>
+        <Position X="108.68463" Y="16.679062" Z="-116.3575"/>
+        <Scale X="8.6146297" Y="8.6146297" Z="8.6146297"/>
         <Rotation X="0" Y="0" Z="0"/>
     </Transform>
     <Children Size="0"/>

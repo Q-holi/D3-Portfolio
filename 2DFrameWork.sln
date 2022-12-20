@@ -69,6 +69,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shaders", "Shaders", "{6498
 		Shaders\3.ShadowMap.hlsl = Shaders\3.ShadowMap.hlsl
 		Shaders\4.Cube.hlsl = Shaders\4.Cube.hlsl
 		Shaders\4.CubeMap.hlsl = Shaders\4.CubeMap.hlsl
+		Shaders\4.CubeOutLine.hlsl = Shaders\4.CubeOutLine.hlsl
 		Shaders\4.ShadowMap.hlsl = Shaders\4.ShadowMap.hlsl
 		Shaders\5.Cube.hlsl = Shaders\5.Cube.hlsl
 		Shaders\5.CubeMap.hlsl = Shaders\5.CubeMap.hlsl
@@ -162,6 +163,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SampleMesh", "SampleMesh", 
 	ProjectSection(SolutionItems) = preProject
 		Contents\Mesh\SampleMesh\1.SampleCube.mesh = Contents\Mesh\SampleMesh\1.SampleCube.mesh
 		Contents\Mesh\SampleMesh\1.SampleSphere.mesh = Contents\Mesh\SampleMesh\1.SampleSphere.mesh
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "README", "README", "{8F5DCCBE-E3CD-4963-8732-FF3695B6C791}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
 	EndProjectSection
 EndProject
 Global

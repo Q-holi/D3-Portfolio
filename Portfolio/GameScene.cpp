@@ -78,6 +78,8 @@ GameScene::GameScene()
 
 
 	simulator.addGameObject(newObjectID, *objectArray[0]);
+	newObjectID++;
+	simulator.addGameObject(newObjectID, *objectArray[1]);
 	//for (int i = 0; i < 2; i++) {
 	//   // cout << "objectArray" << i << &objectArray[i] << endl;
 	//    newObjectID = i + 1;
@@ -86,6 +88,8 @@ GameScene::GameScene()
 	//    cout << objectArray[i]->inverseMass << endl;
 	//}
 	ImGuiEditer = true;
+	openHierarchy = false;
+
 }
 
 GameScene::~GameScene()
@@ -100,7 +104,7 @@ void GameScene::Init()
 	Cam = (Camera*)user->Find("Camera");
 	//Cam->LoadFile("Cam.xml");
 	//Camera::main = Cam;
-	Camera::main = MainCamera;
+	//Camera::main = MainCamera;
 	ResizeScreen();
 
 
@@ -125,7 +129,7 @@ void GameScene::Update()
 		ImGui::Text("FPS: %d", TIMER->GetFramePerSecond());
 
 		ImGuiStyle& style = ImGui::GetStyle();
-		style.GrabRounding = style.FrameRounding = 15.0f;
+		//style.GrabRounding = style.FrameRounding = 15.0f;
 		static ImGuiStyle ref_saved_style;
 
 		if (ImGui::ShowStyleSelector("Colors##Selector"))
@@ -181,7 +185,7 @@ void GameScene::Update()
 
 		ImGui::EndMenuBar();
 	}
-	if (ImGui::CollapsingHeader("Hierarchy"))
+	if (ImGui::CollapsingHeader("Hierarchy") or openHierarchy)
 	{
 		sky->RenderHierarchy();
 		user->RenderHierarchy();
@@ -241,9 +245,12 @@ void GameScene::Update()
 
 
 
-	//simulator.Simulate(DELTA);
+	simulator.Simulate(DELTA);
 	for (int i = 0; i < 2; i++) {
 		objectArray[i]->UpdatePhysics();
+		if ((objectArray[i]->GetWorldPos().y - objectArray[i]->scale.x) < 0.1f)
+			objectArray[i]->SetWorldPosY(0.0f + objectArray[i]->scale.x);
+
 	}
 
 
@@ -381,8 +388,8 @@ void GameScene::PreRender()
 
 void GameScene::Render()
 {
-	//postEffect->Render();
-	gameRenderScene->Render();
+	postEffect->Render();
+	//gameRenderScene->Render();
 }
 
 void GameScene::ResizeScreen()
@@ -427,6 +434,8 @@ void GameScene::HandleInput()
 				{
 					objectArray[i]->ObjectHandleIN();
 					target = objectArray[i];
+					objectArray[i]->selectHierarchy = true;
+					openHierarchy = true;
 					// Set our target variable to be the Transform object we hit with our raycast
 					//target = Hit2.transform;
 					target->SetWorldPos(Hit2);
@@ -456,7 +465,10 @@ void GameScene::HandleInput()
 			//target.GetComponent<Rigidbody>().isKinematic = false;
 			target->ObjectHandleOUT();
 			// Set our target variable to null
+			target->selectHierarchy = false;
+			openHierarchy = false;
 			target = nullptr;
+			
 		}
 	}
 }

@@ -40,6 +40,7 @@ public:
 	shared_ptr<Mesh>			mesh;
 	shared_ptr<Material>		material;
 	Collider*					collider;
+	bool						selectHierarchy;
 	//Method
 protected:
 	GameObject();

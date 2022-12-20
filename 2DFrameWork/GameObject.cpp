@@ -9,6 +9,7 @@ GameObject::GameObject()
 	shader = nullptr;
 	material = nullptr;
 	collider = nullptr;
+	selectHierarchy = false;
 }
 Actor::Actor()
 {

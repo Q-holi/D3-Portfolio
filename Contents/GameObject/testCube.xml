@@ -1,10 +1,7 @@
 <Root Name="Cube" Visible="true" ObType="1">
-    <Mesh File="2.Cube.mesh"/>
+    <Mesh File="1.Cube2.mesh"/>
     <Shader File="2.Cube.hlsl"/>
     <Material File="testcube.mtl"/>
-        <Position X="0" Y="0" Z="0"/>
-        <Scale X="1" Y="1" Z="1"/>
-        <Rotation X="0" Y="0" Z="0"/>
     <Transform>
         <Position X="85.317032" Y="118.16376" Z="39.402973"/>
         <Scale X="29.969719" Y="29.969719" Z="29.969719"/>
