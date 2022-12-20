@@ -415,56 +415,39 @@ void GameScene::ResizeScreen()
 
 void GameScene::HandleInput()
 {
-	// Check for left mouse click
+	//-- 마우스 휠 버튼 클릭
 	if (INPUT->KeyDown(VK_MBUTTON))
 	{
-		// If we do not currently have a target
+		//--현재 target을 들고 있지 않으면
 		if (target == nullptr)
 		{
-			// Fire a raycast with the layer mask that only hits potential targets
+			//--현재 바라보고 있는 카메라 기준의 마우스 방향으로 Ray 생성
 			Ray mouse = Util::MouseToRay(INPUT->position, Cam);
-			//hit.position = Cam->GetWorldPos();
-			//mouse.position = user->Find("Camera")->GetWorldPos();
-			//mouse.direction = Vector3(1000,0,0);
 			Vector3 Hit2;
 
-			for (int i = 0; i < 2; i++) {
+			for (int i = 0; i < ArraySize; i++) {
 				if (Util::RayIntersectTri(mouse, objectArray[i], Hit2))
-					//if (Physics.Raycast(transform.position, transform.forward, out hit, Mathf.Infinity, targetMask))
 				{
 					objectArray[i]->ObjectHandleIN();
 					target = objectArray[i];
 					objectArray[i]->selectHierarchy = true;
 					openHierarchy = true;
-					// Set our target variable to be the Transform object we hit with our raycast
-					//target = Hit2.transform;
+
 					target->SetWorldPos(Hit2);
-					// Disable physics for the object
 
-					//target.GetComponent<Rigidbody>().isKinematic = true;
-
-					// Calculate the distance between the camera and the object
-					//originalDistance = Vector3.Distance(transform.position, target.position);
 					Vector3 temp = Cam->GetWorldPos() - target->GetWorldPos();
 					originalDistance = temp.Length();
 
-					// Save the original scale of the object into our originalScale Vector3 variabble
-					//originalScale = target.localScale.x;
 					originalScale = target->scale.x;
 
-					// Set our target scale to be the same as the original for the time being
-					//targetScale = target.localScale;
 					targetScale = target->scale;
 				}
 			}
 		}
-		// If we DO have a target
+		//--들고 있던 targetObject 해제
 		else
 		{
-			// Reactivate physics for the target object
-			//target.GetComponent<Rigidbody>().isKinematic = false;
 			target->ObjectHandleOUT();
-			// Set our target variable to null
 			target->selectHierarchy = false;
 			openHierarchy = false;
 			target = nullptr;

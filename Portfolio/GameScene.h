@@ -1,4 +1,5 @@
 #pragma once
+#define ArraySize 2
 #include "SuperliminalObject.h"
 #include "SuperliminalSimulator.h"
 class GameScene : public Scene
