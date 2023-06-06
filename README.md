@@ -13,7 +13,8 @@
  4. DirectXTk - SimpleMath
 
 
-
+Scaling Mechanic을 위한 Matrix(행렬)내용 정리  
+[Notion으로 이동](https://industrious-billboard-eea.notion.site/Matrix-2715b69f72714baa860733198a7f9e69?pvs=4)  
 | Development | Preview |
 |:---:|:---:|
 |**Scaling Mechanic**|![Superliminal scaling mechanic](https://user-images.githubusercontent.com/32233160/208629664-16cc06dc-be21-44ba-bdb4-ba0d1eddb429.gif)|
